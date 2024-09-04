@@ -1,0 +1,15 @@
+<html>
+
+<title>GBGACNFS</title>
+
+<body style="background-color:#F8C471;">
+
+<h1>The Sand Dollar Cafe</h1>
+<h2>GBGACNFS</h2>
+<p>GBGACNFS is an acronym, standing for "Glass Before Glass American Currency Not Fixed Speed". The "Glass Before Glass" is Sand, The "American Currency" is Dollar, The "Not Fixed" is Break and the "Speed" is for Fast. Put together this makes "Sandollar Breakfast".</p>
+<h2>The Sand Dollar Breakfast</h2>
+<img src ="https://i.pinimg.com/originals/d3/d8/5f/d3d85f2b4923256047cbe78ba2ea5be7.jpg"/img>
+
+</body>
+
+</html> 

@@ -1,0 +1,18 @@
+body{
+	background-color: lightBlue;
+}
+
+h2{
+	font-family: Arial;
+	font-size:24px;
+	text-align: center;
+}
+
+h3{
+	font-family: Arial;
+	color:yellow;
+}
+
+.red{
+	color:red
+}
