@@ -24,6 +24,23 @@ t.ht()
 t2.ht()
 t3.ht()
 t4.ht()
+def end():
+    if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
+        print("You have won!!!!!!! wooohoo (i tried to code it to end by itself but it was already BUGGY enough)")
+        six="n"
+        five="n"
+        two="n"
+        on=1
+def endish():
+    if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
+        print("You have won!!!!!!! wooohoo (i tried to code it to end by itself but it was already BUGGY enough)")
+        six="n"
+        five="n"
+        two="n"
+        on=1
+    else:
+        dice = (random.randint(1,6))
+
 while (on!=1):
     while (six=="y"):
         dice = (random.randint(1,6))
@@ -94,12 +111,7 @@ while (on!=1):
                                 t.lt(90)
                                 t.fd(20)
                                 two="n"
-                                if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
-                                    six="N"
-                                    five="n"
-                                    two="n"
-                                    on=1
-                                    print("You have won!!!!!!! wooohoo (i tried to code it to end by itself but it was already BUGGY enough)")
+                                endish()
                             counttwo=counttwo+1
     
                         if (dice==4):
@@ -170,14 +182,7 @@ while (on!=1):
                                 t4.lt(90)
                                 t4.fd(20)
                                 countthree=countthree+1
-                                if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
-                                    six="N"
-                                    five="n"
-                                    two="n"
-                                    on=1
-                                    print("You have won!!!!!!! wooohoo (i tried to code it to end by itself but it was already BUGGY enough)")
-                                else:
-                                    dice = (random.randint(1,6))
+                                endish()
                         if (dice==1):
                             if (countone==1):
                                 print("You have rolled a 1 you have your first eye")
@@ -195,23 +200,11 @@ while (on!=1):
                                 t5.down()
                                 t5.fd(4)
                                 countone=countone+1
-                                if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
-                                    six="N"
-                                    five="n"
-                                    two="n"
-                                    on=1
-                                    print("You have won!!!!!!! wooohoo (i tried to code it to end by itself but it was already BUGGY enough)")
-                                else:
-                                    dice = (random.randint(1,6))
+                                endish()
                         else:
                             print("you have rolled a ",dice,)
                             two = input("You didnt roll anything useful do you want to roll again(y/n)")
-                            if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
-                                    six="N"
-                                    five="n"
-                                    two="n"
-                                    on=1
-                                    print("You have won!!!!!!! wooohoo (i tried to code it to end by itself but it was already BUGGY enough)")
+                            end()
                         
 
              
@@ -224,11 +217,7 @@ while (on!=1):
                         t2.rt(90)
                         t2.fd(40)
                         countfour=countfour+1
-                        if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
-                            six="N"
-                            five="n"
-                            on=1
-                            print("You have won!!!!!!! wooohoo (i tried to code it to end by itself but it was already BUGGY enough)")
+                        end()
                 if (dice==3):
                     if (countthree==1):
                         print("You have rolled a 3 you have your first leg")
@@ -290,35 +279,8 @@ while (on!=1):
                         t4.lt(90)
                         t4.fd(20)
                         countthree=countthree+1
-                        if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
-                            six="N"
-                            five="n"
-                            two="n"
-                            on=1
-                            print("You have won!!!!!!! wooohoo (i tried to code it to end by itself but it was already BUGGY enough)")
-                        else:
-                            dice = (random.randint(1,6))
+                        endish()
                         
-                else:
-                    print("you have rolled a",dice,)
-                    five = input("You didnt roll anything useful do you want to roll again(y/n)")
-                    if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
-                        print("You have won!!!!!!! wooohoo (i tried to code it to end by itself but it was already BUGGY enough)")
-                        six="n"
-                        five="n"
-                        two="n"
-                        on=1
-        else:
-            print("you have rolled a",dice,)
-            six = input("You didnt roll a 6 do you want to roll again(y/n)")
-            if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
-                six="N"
-                five="n"
-                on=1
-                print("You have won!!!!!!! wooohoo")
-    if (countthree>6 and counttwo>2 and countfour>1 and countone>2):
-        print("You have won!!!!!!! wooohoo (i tried to code it to end by itself but it was already BUGGY enough)")
-        six="n"
-        five="n"
-        two="n"
-        on=1
+                end()
+        end()
+    end()
